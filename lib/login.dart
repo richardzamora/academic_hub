@@ -31,7 +31,7 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0, bottom: 80.0),
                   child: new Text(
-                    "Academic Tinder",
+                    "Academic Hub",
                     style: new TextStyle(fontSize: 30.0),
                   ),
                 )

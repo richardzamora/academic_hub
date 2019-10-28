@@ -1,3 +1,4 @@
+import 'package:academic_hub/mantenimiento.dart';
 import 'package:flutter/material.dart';
 import 'login.dart';
 
@@ -125,6 +126,12 @@ class MyHomePage extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.only(
                         left: 20.0, right: 5.0, top: 10.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => Mantenimiento(),
+                        ));
+                      },
                     child: new Container(
                         alignment: Alignment.center,
                         height: 60.0,
@@ -134,12 +141,19 @@ class MyHomePage extends StatelessWidget {
                         child: new Text("Facebook",
                             style: new TextStyle(
                                 fontSize: 20.0, color: Colors.white))),
+                    )
                   ),
                 ),
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(
                         left: 10.0, right: 20.0, top: 10.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => Mantenimiento(),
+                        ));
+                      },
                     child: new Container(
                         alignment: Alignment.center,
                         height: 60.0,
@@ -149,6 +163,7 @@ class MyHomePage extends StatelessWidget {
                         child: new Text("Google",
                             style: new TextStyle(
                                 fontSize: 20.0, color: Colors.white))),
+                    )
                   ),
                 )
               ],
