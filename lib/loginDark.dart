@@ -5,7 +5,7 @@ import 'home.dart';
 
 
 
-class LoginPage extends StatelessWidget {
+class LoginPageDark extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
@@ -14,14 +14,15 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
   statusBarColor: Colors.orange, //or set color with: Color(0xFF0000FF)
 ));
     return new Scaffold(
+      backgroundColor: Colors.black,
       appBar: new AppBar(
         backgroundColor:Colors.transparent,
           elevation: 0.0,
-          iconTheme: new IconThemeData(color: Color(0xFF18D191))),
-      body: Center(
+          iconTheme: new IconThemeData(color: Colors.black)),
+      body: Container(
+        width: double.infinity,
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-
           children: <Widget>[
             new Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -45,6 +46,8 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
                   const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
               child: new TextField(
                 decoration: new InputDecoration(labelText: 'Email'),
+                style: new TextStyle(color: Color(0xFF18D191)),
+
               ),
             ),
             new SizedBox(
@@ -56,6 +59,7 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
               child: new TextField(
                 obscureText: true,
                 decoration: new InputDecoration(labelText: 'Password'),
+                  style: new TextStyle(color: Color(0xFF18D191))
               ),
             ),
             new Row(
